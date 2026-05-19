@@ -48,5 +48,8 @@ for chunk in stream:
 
 ---
 
+### Why did I make this?
+I believe that the HRM-Text models are the next big thing in AI. I'm building a wrapper for HRM-Text to make it much easier for people to adopt it.
+
 ### Special Thanks
 Special thanks to the people at SapientINC for creating [HRM-Text](https://github.com/sapientinc/HRM-Text) and Ollama for the inspiration of this project. I support the work of SapientINC and look forward to seeing more from HRM models!
