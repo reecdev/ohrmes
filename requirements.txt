@@ -1,4 +1,4 @@
-socketio
+python-socketio
 flask_socketio
 flask
 torch
