@@ -34,3 +34,14 @@ from ohrmes_lib import chat
 
 print(chat(model="sapientinc/HRM-Text-1B", messages=[{"role": "user", "content": "Why is the sky blue?"}])["message"]["content"])
 ```
+
+Or with streaming:
+
+```python
+from ohrmes_lib import chat
+
+stream = chat(model="sapientinc/HRM-Text-1B", messages=[{"role": "user", "content": "Why is the sky blue?"}], stream=True)
+
+for chunk in stream:
+    print(chunk["message"]["content"], end="", flush=True)
+```
