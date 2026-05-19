@@ -45,3 +45,8 @@ stream = chat(model="sapientinc/HRM-Text-1B", messages=[{"role": "user", "conten
 for chunk in stream:
     print(chunk["message"]["content"], end="", flush=True)
 ```
+
+---
+
+### Special Thanks
+Special thanks to the people at SapientINC for creating [HRM-Text](https://github.com/sapientinc/HRM-Text) and Ollama for the inspiration of this project. I support the work of SapientINC and look forward to seeing more from HRM models!
