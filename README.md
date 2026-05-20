@@ -20,6 +20,17 @@ And install requirements:
 pip install -r requirements.txt
 ```
 
+Optionally, add Ohrmes CLI as a custom command via alias:
+
+```bash
+# switch ~/.bahrc to ~/.zshrc if using zsh
+echo "alias ohrmes='python $(pwd)/ohrmes.py'" >> ~/.bashrc
+source ~/.bashrc
+
+# Now you can run it from anywhere!
+ohrmes --run sapientinc/HRM-Text-1B
+```
+
 ## Using ohmres
 Use the ohrmes.py script to use Ohmres.
 
