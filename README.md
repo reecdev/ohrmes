@@ -20,6 +20,19 @@ And install requirements:
 pip install -r requirements.txt
 ```
 
+Note: Some platforms will download the CPU-only version of PyTorch by default. If you have an NVIDIA GPU, check if CUDA is available.
+
+```bash
+python -c "import torch; print(torch.cuda.is_available())"
+# ^ should return True if you have an NVIDIA gpu
+```
+
+```bash
+# reinstall pytorch with gpu support if it returns False
+pip uninstall torch torchvision torchaudio
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+```
+
 Optionally, add Ohrmes CLI as a custom command via alias:
 
 ```bash
