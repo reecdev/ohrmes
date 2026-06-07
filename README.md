@@ -33,10 +33,10 @@ pip uninstall torch torchvision torchaudio
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 ```
 
-Optionally, add Ohrmes CLI as a custom command via alias:
+Optionally, add Ohrmes CLI as a custom command via alias if using macOS or Linux:
 
 ```bash
-# switch ~/.bahrc to ~/.zshrc if using zsh
+# switch ~/.bashrc to ~/.zshrc if using zsh
 echo "alias ohrmes='python $(pwd)/ohrmes.py'" >> ~/.bashrc
 source ~/.bashrc
 
@@ -49,7 +49,7 @@ Use the ohrmes.py script to use Ohmres.
 
 ```bash
 python ohrmes.py --serve &
-python ohrmes.py --run sapientinc/HRM-Text-1B # run cli
+python ohrmes.py --run sapientinc/HRM-Text-1B
 ```
 
 You can also use the ohrmes_lib.py script in your python scripts:
