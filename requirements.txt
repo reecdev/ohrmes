@@ -3,4 +3,3 @@ flask_socketio
 flask
 torch
 accelerate
-cuda
