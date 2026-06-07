@@ -2,6 +2,8 @@
 Ohrmes is a wrapper for HRM-Text that makes it easy to use HRM-Text models locally on your computer.
 
 ## Quickstart
+To use Ohrmes, you need to have Python
+
 Use a Transformers build that includes the hrm_text model class. If your installed release does not include it yet, install Transformers directly from the upstream main branch:
 
 ```bash
@@ -20,7 +22,7 @@ And install requirements:
 pip install -r requirements.txt
 ```
 
-Note: Some platforms will download the CPU-only version of PyTorch by default. If you have an NVIDIA GPU, check if CUDA is available.
+Note: Some platforms will download the CPU-only version of PyTorch by default. If you have an NVIDIA GPU, check if CUDA is available.*
 
 ```bash
 python -c "import torch; print(torch.cuda.is_available())"
@@ -32,6 +34,8 @@ python -c "import torch; print(torch.cuda.is_available())"
 pip uninstall torch torchvision torchaudio
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 ```
+
+###### *This step can be skipped if you don't have a GPU.
 
 Optionally, add Ohrmes CLI as a custom command via alias if using macOS or Linux:
 
